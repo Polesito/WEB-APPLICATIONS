@@ -1,0 +1,11 @@
+table {
+    border-collapse: collapse; 
+}
+table tr th {
+    border-bottom: 1px solid black;
+    text-align: left;
+    font-family: sans-serif;
+}
+table tr td {
+    padding-right: 1.4em;
+}

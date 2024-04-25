@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        body {
+            margin-top: 2em;
+        }
+        .frame {
+            display: flex;
+            flex-direction: column;
+            height: 20em;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .frame div {
+            padding: 1em;
+            background-color: pink;
+            margin: .2em;
+        }
+
+        #explode {
+            flex: 1;
+            background-color: red;
+        }
+
+        #closse-button {
+            margin: 0;
+            position: absolute;
+            background-color: white;
+            padding: 0 .3em;
+            top: 0;
+            /*bottom: 0;*/
+            right: 0;
+            /*left: 0;*/
+            font-size: 20pt;
+            color: black;
+            font-weight: bold;
+        }
+
+        header {
+            position: fixed;
+            background-color: yellow;
+            top: 0;
+            right: 0;
+            left: 0;
+            padding: .2em .3em;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        This is the header
+    </header>
+    <h1>Positioning</h1>
+    <div class="frame">
+        <div>
+            text inside
+        </div>
+        <div>
+            text inside too
+        </div>
+        <div id="explode">
+
+        </div>
+        <div id="closse-button">&times;</div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit adipisci, ipsam expedita accusamus eius excepturi
+        facilis eos illo ducimus, pariatur vel culpa perferendis ipsa fugiat esse eligendi laboriosam. Molestiae,
+        aliquid!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur ut, earum magnam ab, fuga dolore
+        esse libero deserunt, quaerat dolor fugit cupiditate. Eaque odio voluptas ut fuga, ratione incidunt!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tenetur alias laborum quae ex culpa nesciunt labore
+        sequi, maiores exercitationem dolore aut rerum doloremque ipsum quis. Iusto accusantium minima facere?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta nemo facere nulla a, quas eveniet, veritatis
+        iste, beatae similique quaerat perferendis neque vel est laboriosam doloribus. Repellendus aliquam soluta
+        necessitatibus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur non recusandae animi cum sapiente rerum
+        explicabo, harum facere delectus veniam nulla qui eveniet nobis numquam illo, est eum mollitia dicta.</p>
+
+</body>
+
+</html>

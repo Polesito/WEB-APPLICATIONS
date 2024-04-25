@@ -1,0 +1,29 @@
+#parent {
+    border: 3px solid black;
+    height: 30em; 
+    display: flex;
+    flex-direction: column;
+    /* main axis distribution of children */
+    justify-content: center;
+    /* cross axis alignment */
+    align-items: center;
+}
+#child1 {
+    width: 5em;
+    height: 5em;
+    background-color: red;
+    border-radius: 50%;
+}
+#child2 {
+    flex: 1;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+#child3 {
+    width: 3em;
+    flex: 2;
+    background-color: blue;
+}

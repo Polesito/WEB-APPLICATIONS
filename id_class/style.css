@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+header {
+    background-color: navy;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
+    box-shadow: 0px 0px 5px 5px rgb(214, 214, 214);
+}
+.space {
+    flex: 1;
+}
+main {
+    padding: 1em;
+}
+h1 {
+    margin-top: 0;
+}
+#starting {
+    font-size: 150%;
+}
+.note {
+    font-size: 90%;
+    font-style: italic;
+}
+.click-bait {
+    outline: 5px solid red;
+    border-radius: 1em;
+}

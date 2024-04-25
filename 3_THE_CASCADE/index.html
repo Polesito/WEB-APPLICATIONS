@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cascade</title>
+    <style>
+        .b { /* 0-1-0 */
+            background-color: coral;
+        }
+        .c { /* 0-1-0 */
+            background-color: aqua;
+        }
+        div {
+            /* 0-0-1 */
+            border: 2px solid red;
+
+        }
+
+        article div.a {
+            /* 0-1-2 */
+            padding: 1em;
+            border: 1px solid black;
+
+        }
+
+        #title {
+            /* 1-0-0 */
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">The Cascade</h1>
+    <article>
+        <div class="a">
+            This is the "a" div
+        </div>
+        <!-- 1-0-0 -->
+        <div style="border: 2px solid green;">
+            super-specific
+        </div>
+    </article>
+    <div class="a">
+        This is another "a" div
+    </div>
+    <div class="b c">
+        This is B C 
+    </div>
+</body>
+
+</html>
